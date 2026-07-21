@@ -100,7 +100,7 @@ $steamPath = Show-SpinnerAndResult `
             }
         }
 
-        return @{ Success = $false; Extra = 'L'installation de steam n'a pas été trouvé.' }
+        return @{ Success = $false; Extra = 'Linstallation de steam na pas été trouvé.' }
     }
 
 # Step 1: Kill Steam processes
