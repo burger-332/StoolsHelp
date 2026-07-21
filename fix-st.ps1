@@ -185,7 +185,7 @@ $dllTotalDownloaded = 0
 $dllTotalBytes = 0
 
 $dllTitlePos = [Console]::CursorTop
-Write-Host "$($dllSpinner[0]) Download updated files" -ForegroundColor White
+Write-Host "$($dllSpinner[0]) Télécharge les fichiers mis a jour" -ForegroundColor White
 $dllBarPos = [Console]::CursorTop
 Write-Host ''
 
