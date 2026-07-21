@@ -115,7 +115,7 @@ $null = Show-SpinnerAndResult `
                 Start-Sleep -Seconds 2
                 return @{ Success = $true; Path = '' }
             } catch {
-                return @{ Success = $false; Extra = "Could not terminate Steam processes. Run PowerShell as administrator and run the script again." }
+                return @{ Success = $false; Extra = "La fermeture des processus steam a échoué. Lancez Powershell en administrateur et réessayez." }
             }
         } else {
             return @{ Success = $true; Path = '' }
@@ -134,7 +134,7 @@ $null = Show-SpinnerAndResult `
             if (Test-Path $dll2) { Remove-Item $dll2 -Force -ErrorAction Stop }
             return @{ Success = $true; Path = '' }
         } catch {
-            return @{ Success = $false; Extra = "Could not delete files: $($_.Exception.Message)" }
+            return @{ Success = $false; Extra = "Impossible de supprimer les fichiers: $($_.Exception.Message)" }
         }
     }
 
@@ -161,7 +161,7 @@ $null = Show-SpinnerAndResult `
             }
             return @{ Success = $true; Path = "$removed file(s) removed" }
         } catch {
-            return @{ Success = $false; Extra = "Could not remove SteamProof manifest fix: $($_.Exception.Message)" }
+            return @{ Success = $false; Extra = "Impossible de supprimer le correctif du manifeste SteamProof: $($_.Exception.Message)" }
         }
     }
 
